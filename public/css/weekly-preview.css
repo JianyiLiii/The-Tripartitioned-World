@@ -1,0 +1,24 @@
+.weekly-preview-chart { padding:20px; }
+.weekly-preview-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-bottom:16px; }
+.weekly-preview-toolbar>strong { font-size:13px; }
+.weekly-preview-people { display:flex; flex-wrap:wrap; gap:14px 24px; padding-bottom:16px; margin-bottom:8px; border-bottom:1px solid var(--line); }
+.weekly-preview-people>span { display:flex; align-items:center; gap:7px; font-size:11px; }
+.weekly-preview-people small { display:block; font-size:9px; color:var(--ink-3); margin-top:2px; }
+.weekly-preview-chart .wk { --row:10px; }
+.weekly-preview-selection { margin-top:12px; padding:14px 16px; border:1px solid #dfe6f3; border-radius:8px; background:#f8faff; font-size:12px; display:grid; gap:8px; }
+.weekly-preview-selection>span { font-size:11px; color:var(--ink-2); }
+.weekly-preview-selection-head { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center; }
+.weekly-preview-locals { display:flex; flex-wrap:wrap; gap:12px 22px; }
+.weekly-preview-locals>span { display:grid; gap:4px; font-size:10px; color:var(--ink-2); }
+.weekly-preview-locals small { color:#637590; }
+.weekly-preview-future { margin-top:28px; }
+.weekly-preview-future h2 { font-size:20px; }
+.weekly-preview-future>p { font-size:11px; color:var(--ink-2); margin:7px 0 16px; }
+.weekly-preview-future-list { border:1px solid var(--line-2); border-radius:10px; overflow:hidden; }
+.weekly-preview-future-row { display:flex; align-items:center; gap:18px; padding:18px; background:#fff; }
+.weekly-preview-future-row+.weekly-preview-future-row { border-top:1px solid var(--line); }
+.weekly-preview-date { font-size:12px; font-weight:650; min-width:54px; }
+.weekly-preview-future-row strong { font-size:13px; }
+.weekly-preview-future-row p,.weekly-preview-future-row small { font-size:10px; color:var(--ink-2); margin-top:4px; display:block; }
+.weekly-preview-confirmed { margin-left:auto; padding:5px 8px; border-radius:5px; color:#237966; background:#eef8f4; font-size:10px; }
+@media(max-width:480px) { .weekly-preview-chart { padding:14px 9px; }.weekly-preview-future-row { gap:12px; padding:14px 11px; }.weekly-preview-date { min-width:42px; } }

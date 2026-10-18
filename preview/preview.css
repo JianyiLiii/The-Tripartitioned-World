@@ -1,0 +1,22 @@
+body { background:#fff; }
+#preview-root { max-width:1120px; margin:auto; padding:0 28px; }
+.public-header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); }
+.public-header .product-brand { margin:0; padding:0; }
+.public-header nav { display:flex; align-items:center; gap:10px; }
+.public-intro { padding:48px 0 28px; max-width:760px; }
+.public-label { color:#536493; font-size:11px; font-weight:700; letter-spacing:.1em; }
+.public-intro h1 { font-size:clamp(28px,4vw,42px); letter-spacing:-.04em; line-height:1.2; margin:14px 0; }
+.public-intro p { line-height:1.7; color:var(--ink-2); font-size:14px; }
+.public-intro .public-disclosure { margin-top:12px; font-size:12px; color:var(--ink-3); }
+.weekly-preview { padding:0 0 32px; }
+.weekly-preview .preview-heading h1 { font-size:23px; }
+.weekly-preview .weekly-preview-chart .wk { --row:12px; }
+.weekly-preview .preview-controls { margin-top:20px; }
+.public-footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding:24px 0; border-top:1px solid var(--line); font-size:12px; color:var(--ink-2); }
+@media(max-width:600px) {
+  #preview-root { padding:0 14px; }
+  .public-header { gap:8px; }
+  .public-header .brand-name { font-size:13px; }
+  .public-intro { padding-top:30px; }
+  .weekly-preview .weekly-preview-chart .wk { --row:10px; }
+}

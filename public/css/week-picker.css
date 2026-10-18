@@ -1,0 +1,13 @@
+.week-picker { display:flex; align-items:center; flex-wrap:wrap; gap:3px; }
+.week-picker-control { position:relative; }
+.week-picker-value { display:flex; align-items:center; justify-content:center; gap:8px; min-height:36px; padding:0 11px; border:1px solid #dde3ed; border-radius:7px; background:#fff; color:#26364f; font:600 11px var(--sans); cursor:pointer; }
+.week-picker-value:hover { border-color:#9aaad2; background:#f8faff; }
+.week-picker-value:focus-visible { outline:2px solid #6985d9; outline-offset:2px; }
+.week-picker-popover { position:absolute; top:calc(100% + 7px); right:0; width:245px; max-width:calc(100vw - 44px); z-index:20; padding:15px; background:#fff; border:1px solid #dce3ee; border-radius:10px; box-shadow:0 10px 28px #273b6224; }
+.week-picker-popover[hidden] { display:none; }
+.week-picker-popover label { display:grid; gap:8px; font-size:11px; font-weight:600; color:#34415c; }
+.week-picker-popover small { display:block; margin-top:8px; font-size:10px; color:#69758c; }
+.week-picker-input { width:100%; color-scheme:light; font-family:var(--sans); }
+.week-picker .btn-icon { width:30px; height:34px; }
+.week-picker .btn { font-size:10px; padding-inline:8px; }
+@media(max-width:480px) { .week-picker-value { padding-inline:8px; font-size:10px; gap:6px; } }

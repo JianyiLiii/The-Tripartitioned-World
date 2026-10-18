@@ -1,0 +1,12 @@
+data/
+.env
+.env.*
+config/access-users.json
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+*.log
+*.zip
+.DS_Store
+Thumbs.db

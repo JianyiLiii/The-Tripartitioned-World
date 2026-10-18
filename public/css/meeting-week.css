@@ -1,0 +1,115 @@
+/* The weekly grid is the meeting page's primary workspace. */
+.managed-users-list { margin-top:18px; max-height:50vh; overflow:auto; }
+.managed-user-row { display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--line); }
+.managed-user-name { flex:1; min-width:0; overflow-wrap:anywhere; }
+.managed-user-name small { display:block; margin-top:4px; color:var(--ink-2); }
+.managed-user-row .btn { flex-shrink:0; }
+.meeting-week-page .detail-title-row { margin-top:14px; padding-bottom:18px; }
+.meeting-week-page .detail-title { font-size:26px; margin-top:6px; }
+.meeting-week-page .detail-desc { margin-top:7px; }
+.meeting-week-page .sched { margin-top:24px; }
+.meeting-week-page .sched-head { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px 20px; padding-bottom:14px; margin-bottom:17px; }
+.meeting-week-page .sched-head .section-title { font-size:22px; margin:0; }
+.meeting-week-page .sched-head .section-sub { font-size:11px; margin:0; }
+.meeting-week-page .chart-tools { gap:11px; margin-bottom:14px; }
+.meeting-week-page .chart-row:first-child { padding-bottom:10px; }
+.meeting-week-page .chart-tools .seg-btn { font-weight:750; font-size:14px; color:var(--ink); }
+.meeting-week-page .chart-tools .seg-btn.active { background:#eef1ff; border-radius:6px 6px 0 0; }
+.meeting-week-page .chart-foot { font-family:var(--sans); font-size:10px; align-items:center; gap:8px; }
+.meeting-week-page .chart-foot .btn { padding:0; height:26px; font-size:10px; }
+.meeting-week-page .best-head { gap:8px; }
+.meeting-week-page .best-head .panel-title { font-size:15px; }
+.meeting-week-page .best-head > span { font-size:10px; }
+.meeting-week-page .best-time { font-size:13px; line-height:1.5; }
+.meeting-week-page .best-item { padding-block:13px; }
+.meeting-week-page .best-local,.meeting-week-page .best-missing { font-size:10px; }
+.meeting-week-page .best-empty { font-family:var(--sans); font-size:11px; font-style:normal; padding:14px 0 2px; }
+.meeting-week-page .p-best { padding:18px; }
+
+.week-selection { background:#f7f9ff; border:1px solid #e3e9f7; border-radius:8px; padding:14px; margin-top:15px; }
+.week-selection[hidden] { display:none; }
+.week-select-empty { margin:0; color:var(--ink-3); font-size:11px; line-height:1.65; }
+.week-selection-top { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.week-selection-time { font-size:12px; font-weight:600; line-height:1.6; color:var(--ink); }
+.week-selection-count { margin-top:4px; font-size:10px; color:var(--ink-2); }
+.week-selection-top > .btn { flex-shrink:0; }
+.week-selection-people { display:flex; flex-wrap:wrap; gap:7px 15px; margin-top:11px; }
+.week-selection-people > span { display:inline-flex; align-items:center; gap:5px; color:var(--ink-2); font-size:10px; }
+.week-selection-people b { font-weight:500; color:var(--ink); }
+.week-selection-missing { margin:9px 0 0; font-size:10px; color:var(--ink-3); line-height:1.6; }
+
+.future-meetings { margin-top:30px; }
+.future-head { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:15px; }
+.future-head .section-title { font-size:22px; }
+.future-head .section-sub { font-size:11px; margin-top:6px; }
+.future-head > .btn { flex-shrink:0; }
+.future-list { border:1px solid var(--line-2); background:#fff; border-radius:10px; overflow:hidden; }
+.future-meeting { display:flex; align-items:center; gap:16px; padding:19px 20px; }
+.future-meeting + .future-meeting { border-top:1px solid var(--line-2); }
+.future-date { flex:none; width:44px; text-align:center; color:var(--ink-3); }
+.future-date > span { font-size:10px; text-transform:uppercase; letter-spacing:.06em; }
+.future-date > strong { display:block; color:var(--ink); font-size:23px; font-weight:500; line-height:1.3; }
+.future-date > small { font-size:9px; }
+.future-main { flex:1; min-width:0; }
+.future-title { display:flex; align-items:center; flex-wrap:wrap; gap:7px; }
+.future-title > a { color:var(--ink); font-size:13px; font-weight:600; text-decoration:none; }
+.future-title > a:hover { color:var(--accent); }
+.future-repeat { color:var(--ink-3); font-size:9px; }
+.future-time { margin-top:6px; color:var(--ink-2); font-size:11px; line-height:1.5; }
+.future-people { display:flex; align-items:center; gap:9px; margin-top:9px; color:var(--ink-3); font-size:10px; line-height:1.6; }
+.future-people .avatar-stack { flex-shrink:0; }
+.future-people .avatar { width:23px; height:23px; font-size:8px; }
+.future-actions { display:flex; align-items:flex-end; flex-direction:column; gap:10px; flex:none; }
+.future-relative { color:var(--ink-3); font-size:10px; }
+.future-buttons { display:flex; align-items:center; gap:4px; }
+.future-buttons .btn { height:29px; font-size:10px; padding-inline:8px; }
+.future-empty,.future-status { border:1px solid var(--line-2); border-radius:9px; padding:20px; background:#fff; color:var(--ink-3); font-size:11px; line-height:1.8; }
+.future-status { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; }
+.future-error { background:#fffcf6; border-color:#eee5d0; }
+.meeting-details { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:24px; }
+.meeting-details .panel { min-width:0; }
+.meeting-details .ov-provider { font-size:21px; }
+
+@media(max-width:760px) {
+  .meeting-week-page .sched-head { display:block; }
+  .meeting-week-page .sched-head .section-sub { margin-top:7px; }
+  .future-head { align-items:flex-start; flex-wrap:wrap; }
+  .future-head > .btn { padding:0; height:26px; }
+  .future-meeting { align-items:flex-start; flex-wrap:wrap; gap:12px; padding:17px; }
+  .future-main { min-width:170px; }
+  .future-actions { flex-direction:row; width:100%; align-items:center; justify-content:space-between; padding-left:56px; }
+  .week-selection-top { align-items:flex-start; flex-direction:column; }
+  .meeting-details { grid-template-columns:1fr; }
+}
+
+@media(max-width:480px) {
+  .meeting-week-page .detail-title { font-size:24px; }
+  .meeting-week-page .sched-head .section-title,.future-head .section-title { font-size:20px; }
+  .future-date { width:36px; }
+  .future-actions { padding-left:48px; }
+  .future-buttons { flex-wrap:wrap; }
+  .future-people { align-items:flex-start; }
+}
+/* Keep day tools above the time inputs; reserve a distinct delete column. */
+.meeting-week-page .day {
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "label actions" "ranges ranges";
+  gap: 8px 12px;
+  padding: 14px 0;
+}
+.meeting-week-page .day-label {
+  grid-area: label; flex-direction: row; align-items: center; flex-wrap: wrap;
+  gap: 7px; padding-top: 0; min-height: 32px;
+}
+.meeting-week-page .day-date { font-size: 12px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+.meeting-week-page .day-total { margin-left: 2px; }
+.meeting-week-page .day-actions { grid-area: actions; gap: 6px; }
+.meeting-week-page .ranges, .meeting-week-page .day-empty { grid-area: ranges; min-width: 0; }
+.meeting-week-page .range {
+  display: grid; grid-template-columns: 2px minmax(0, 1fr) 8px minmax(0, 1fr) 32px;
+  align-items: center; gap: 6px; min-width: 0;
+}
+.meeting-week-page .time-select { width: 100%; min-width: 0; height: 36px; }
+.meeting-week-page .range .btn-icon, .meeting-week-page .day-actions .btn-icon {
+  width: 32px; height: 34px; flex-shrink: 0;
+}
