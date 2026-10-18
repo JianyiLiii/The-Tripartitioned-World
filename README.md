@@ -4,9 +4,9 @@
 
 **The Tripartitioned World（三等分的世界）** helps small teams schedule meetings across countries and time zones. Compare each person's available hours, see shared time in orange, and check the proposed meeting in everyone's local time.
 
-Created and primarily maintained by **JianyiLiii**.
+Created and primarily maintained by **JianyiLiii**. 
+The website has been published at https://the-tripartitioned-world.alwaysdata.net. If you would like to try it out, you can contact me via that site. **Preview address after GitHub Pages is enabled:** [JianyiLiii.github.io/The-Tripartitioned-World](https://JianyiLiii.github.io/The-Tripartitioned-World/).
 
-Licensed under the [MIT License](LICENSE).
 
 ![Interactive public preview](docs/screenshots/public-preview.jpg)
 
@@ -16,7 +16,7 @@ The standalone preview requires **no account**. Try different time zones, meetin
 
 The preview uses anonymous sample participants only. It does not connect to a live workspace, send API requests, or save meetings. The only saved browser preference is the interface language.
 
-**Preview address after GitHub Pages is enabled:** [JianyiLiii.github.io/The-Tripartitioned-World](https://JianyiLiii.github.io/The-Tripartitioned-World/). See [publishing instructions](PUBLISHING.md) to activate it.
+See [publishing instructions](PUBLISHING.md) to activate it.
 
 ![Selected meeting time in each participant's time zone](docs/screenshots/preview-time-zones.jpg)
 
@@ -117,3 +117,5 @@ The public preview is a static site with no login, database, file uploads, or se
 No real account lists, passwords, password hashes, session keys, databases, backups, logs, hosting addresses, or production screenshots are included. No existing users or meetings are created by this source package. Built-in preview names and test fixtures are fictional. Keep runtime `data/`, private `.env` files, and `config/access-users.json` out of version control.
 
 Owner and administrator are generic application roles, not statements about anyone's real account. `Sample Owner` is a local setup example only. The author's GitHub username is used solely for authorship and license attribution; it is not a configured login or administrator identifier.
+
+Licensed under the [MIT License](LICENSE).
