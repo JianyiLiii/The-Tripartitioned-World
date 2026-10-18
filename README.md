@@ -2,7 +2,7 @@
 
 ### Coordinate availability across time zones and find a meeting time for everyone.
 
-**三等分的世界** helps small teams schedule meetings across countries and time zones. Compare each person's available hours, see shared time in orange, and check the proposed meeting in everyone's local time.
+**The Tripartitioned World（三等分的世界）** helps small teams schedule meetings across countries and time zones. Compare each person's available hours, see shared time in orange, and check the proposed meeting in everyone's local time.
 
 Created and primarily maintained by **JianyiLiii**.
 
